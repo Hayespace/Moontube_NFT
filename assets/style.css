@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: #000; /* Black background */
+    background-color: #000;
     color: white;
     font-family: "proxima-soft", sans-serif;
     font-weight: 400;
@@ -35,7 +35,6 @@ body {
     border-image-slice: 1;
 }
 
-/* Scrolling Text Animation */
 .scroller p {
     display: inline-block;
     white-space: nowrap;
@@ -99,7 +98,7 @@ body {
     padding: 0.75rem 1.5rem;
     background-color: transparent;
     color: white;
-    border: none; /* No border by default */
+    border: none;
     font-weight: bold;
     text-align: left;
     border-radius: 10px;
@@ -115,7 +114,8 @@ body {
 }
 
 .sidebar-item button:active,
-.sidebar-item button:focus {
+.sidebar-item button:focus,
+.sidebar-item button.active {
     border: 1.5px solid transparent;
     border-image-source: linear-gradient(90deg, #FF3131 0%, #942983 22.5%, #543DD0 69.5%, #1A82FF 100%);
     border-image-slice: 1;
@@ -139,15 +139,41 @@ body {
     width: 100%;
     max-width: 800px;
     margin-bottom: 3rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 2rem;
 }
 
-/* Video Styling */
-.vid {
-    border-image: linear-gradient(286deg, #7d2ae8 0%, #9b59b6 100%);
+/* Info Box Styling */
+.info-box {
+    background-color: #131316;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid transparent;
+    border-image-source: linear-gradient(90deg, #FF3131 0%, #942983 22.5%, #543DD0 69.5%, #1A82FF 100%);
     border-image-slice: 1;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(120, 120, 120, 0.655);
-    border-radius: 20px;
-    padding: 10px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
 }
+
+/* Hover Effect for Info Box */
+.info-box:hover {
+    background-color: #1f1f1f; /* Slightly darker background on hover */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3); /* Brighter shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    border-image-source: linear-gradient(90deg, #1A82FF 0%, #543DD0 30%, #942983 70%, #FF3131 100%); /* Reverse gradient */
+}
+
+.monk {
+    justify-content: center;
+    height: 250px;
+    padding-bottom: 10px;
+}
+
+.vid {
+    border: 1.5px solid transparent;
+    border-image-source: linear-gradient(90deg, #FF3131 0%, #942983 22.5%, #543DD0 69.5%, #1A82FF 100%);
+    border-image-slice: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(120, 120, 120, 0.655);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
