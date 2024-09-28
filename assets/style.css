@@ -122,6 +122,24 @@ body {
     outline: none;
 }
 
+button {
+    border: 1.5px solid transparent;
+    border-image-source: linear-gradient(90deg, #FF3131 0%, #942983 22.5%, #543DD0 69.5%, #1A82FF 100%);
+    border-image-slice: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff8395;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    
+}
+
+
+
 /* Main Content */
 .main-content {
     margin-left: 270px;
@@ -133,6 +151,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 
 .main-content section {
     text-align: center;
@@ -177,3 +196,53 @@ body {
     transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
+.step {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #292b2c;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    border: 1.5px solid transparent;
+    border-image-source: linear-gradient(90deg, #FF3131 0%, #942983 22.5%, #543DD0 69.5%, #1A82FF 100%);
+    border-image-slice: 1;
+    background-color: #333;
+}
+
+.step-icon {
+    font-size: 30px;
+    color: #ff8395;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.step:hover .step-icon {
+    color: #1a82ff; /* Change icon color on hover */
+}
+
+h2 {
+    color: #ff8395;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 930px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        align-content: center;
+    }
+
+ 

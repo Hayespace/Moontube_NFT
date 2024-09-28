@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moontube Platform</title>
-    <!-- Proxima Soft from Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/bnm2uow.css">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moontube Platform</title>
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Proxima Soft from Adobe Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/bnm2uow.css">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
 <body>
     <!-- Coming Soon Scroller -->
     <div class="scroller">
@@ -36,21 +38,27 @@
             <li class="sidebar-item">
                 <button onclick="location.href='/NFT.html';" class="sidebar-btn active">Mint</button>
             </li>
+            <li class="sidebar-item">
+                <button onclick="checkPassword()" class="sidebar-btn">
+                    <i class="fas fa-lock"></i> Become a Moontuber
+                </button>
+            </li>
         </ul>
     </aside>
+    
 
     <!-- Main Content -->
     <div class="main-content">
         <!-- Mint Section -->
         <section id="mint">
             <div class="info-box">
-                <h1>Mint Your Moontube NFTs</h1>
-                <p>Discover how you can mint your Moontube NFTs and join the next big decentralized media platform.</p>
+                <h1>Mint Your Moontube Profit Share NFTs</h1>
+                <p>For participating in Moontube platform this NFT entitles the holder to a share of 2% of Moontube platform revenue in perpetuity.</p>
             </div>
             <img src="/assets/images/gif.gif" height="350" alt="Mint Image">
 
             <!-- NFT-Inator minting button -->
-            <div id="rampp-minting-container-6b470903-f013-4e94-b26a-f21d2db1a43a" class="rampp-minting-container">
+          <!-- <div id="rampp-minting-container-6b470903-f013-4e94-b26a-f21d2db1a43a" class="rampp-minting-container">
                 <button
                     id="rampp-minting-button-6b470903-f013-4e94-b26a-f21d2db1a43a"
                     class="rampp-minting-button" 
@@ -70,11 +78,12 @@
                 </button>
             </div>
             <!-- End minting button -->
-
+            <h1>Moontube Mint coming SOON!</h1>
             <link href="https://mintplex.xyz/embeds/v2.1/modal-styles.css" rel="stylesheet" />
             <script type="text/javascript" src="https://mintplex.xyz/embed-support.js"></script>
             <script type="text/javascript" src="https://mintplex.xyz/embeds/v2.1/embed.js" data-uuid="6b470903-f013-4e94-b26a-f21d2db1a43a"></script>
         </section>  
     </div>
+    <script src="assets/script.js"></script>
 </body>
 </html>
