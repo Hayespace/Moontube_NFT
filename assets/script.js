@@ -10,7 +10,7 @@ function checkPassword() {
 
     if (password === correctPassword) {
         // Redirect to the secret page
-        window.location.href = '/secret.html';
+        window.location.href = 'secret.html';
     } else {
         // Incorrect password, show an alert and re-prompt
         alert("Incorrect password. Access denied.");
